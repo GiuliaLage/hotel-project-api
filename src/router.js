@@ -15,14 +15,3 @@ router.put('/users/:id', userController.update);
 router.delete('/users/:id', userController.destroy); 
 
 module.exports = router; 
-
-// nodemon auxilia no desenvolvimento porque é um file-watcher e faz um auto-start na aplicação 
-// toda vez que um arquivo no projeto é modificado. 
-
-//dessa forma quando tentamos rodar node ./src/server.js não funciona porque nesse momento não temos
-//um transpilador instalado 
-
-//surcrase transpila o codigo, para uma versão que o node entenda. 
-// alternativa ao babel e pelo que pude ver mais rapido em alguns artigos, mais rapido. 
-
-
